@@ -1,11 +1,13 @@
 /*=========== TEMP STYLES ===========*/
+$black: #000000;
+$white: #ffffff;
 $gray: #dedede;
 $headingFont: "Oswald-Bold";
 
 @mixin box-shadow($value) {
   -webkit-box-shadow: $value;
   -moz-box-shadow: $value;
-  box-shadow:inset $value;
+  box-shadow: $value;
 }
 
 .theme-wky-piranha-supplies {
@@ -31,6 +33,11 @@ $headingFont: "Oswald-Bold";
               @include box-shadow(none !important);
               background: $gray;
               padding: 20px 10px;
+
+              &.selected {
+                backgroud: $black;
+                color: $white;
+              }
 
             }
 

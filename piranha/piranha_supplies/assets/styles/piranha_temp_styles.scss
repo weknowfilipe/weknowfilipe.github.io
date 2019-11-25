@@ -14,6 +14,8 @@ $headingFont: "Oswald-Bold";
   transition: $value;
 }
 .theme-wky-piranha-supplies {
+  overflow-x: hidden;
+  
   &.woocommerce {
     .summary {
       table.variations {

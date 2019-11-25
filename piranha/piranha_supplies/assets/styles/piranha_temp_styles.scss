@@ -1,4 +1,5 @@
 /*=========== TEMP STYLES ===========*/
+$gray: #dedede;
 $headingFont: "Oswald-Bold";
 
 @mixin box-shadow($value) {
@@ -27,6 +28,12 @@ $headingFont: "Oswald-Bold";
 
           .variable-items-wrapper .variable-item:not(.radio-variable-item).button-variable-item {
             @include box-shadow(none !important);
+            background: $gray;
+            padding: 20px 10px;
+
+            [data-wvstooltip]:after,  [data-wvstooltip]:before{
+              display: none;
+            }
           }
         }
       }

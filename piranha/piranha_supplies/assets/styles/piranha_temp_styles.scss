@@ -1,15 +1,33 @@
 /*=========== TEMP STYLES ===========*/
 $headingFont: "Oswald-Bold";
 
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow:inset $value;
+}
+
 .theme-wky-piranha-supplies {
   &.woocommerce {
     .summary {
       table.variations {
         td.label {
           display: block;
+          background: none;
+          text-transform: uppercase;
+          padding: 0;
+          margin-bottom: 10px;
+
+          label {
+            font-family: $headingFont;
+          }
         }
         td.value {
           display: block;
+
+          .variable-items-wrapper .variable-item:not(.radio-variable-item).button-variable-item {
+            @include box-shadow(none !important);
+          }
         }
       }
     }

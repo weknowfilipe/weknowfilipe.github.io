@@ -1,5 +1,18 @@
 /*=========== TEMP STYLES ===========*/
+$headingFont: "Oswald-Bold";
 
-.test {
-  color: red;
+.theme-wky-piranha-supplies {
+  .woocommerce {
+    .summary {
+      table.variations {
+        td.label {
+          display: block;
+        }
+        td.value {
+          display: block;
+        }
+      }
+    }
+
+  }
 }

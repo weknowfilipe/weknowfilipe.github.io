@@ -54,6 +54,11 @@ $headingFont: "Oswald-Bold";
           }
         }
       }
+      .single_variation_wrap {
+        .woocommerce-variation {
+          display: block !important;
+        }
+      }
     }
   }
 }

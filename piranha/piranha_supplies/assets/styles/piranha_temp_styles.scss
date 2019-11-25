@@ -9,12 +9,10 @@ $headingFont: "Oswald-Bold";
   -moz-box-shadow: $value;
   box-shadow: $value;
 }
-
 @mixin transition($value) {
   -webkit-transition: $value;
   transition: $value;
 }
-
 .theme-wky-piranha-supplies {
   &.woocommerce {
     .summary {
@@ -36,7 +34,6 @@ $headingFont: "Oswald-Bold";
           align-items: center;
 
           .variable-items-wrapper {
-
             .variable-item:not(.radio-variable-item).button-variable-item {
               @include box-shadow(none !important);
               @include transition(all ease .2s);
@@ -47,20 +44,16 @@ $headingFont: "Oswald-Bold";
                 background: $black;
                 color: $white;
               }
-
             }
-
             [data-wvstooltip]:after, [data-wvstooltip]:before {
               display: none;
             }
-
-            a.reset_variations {
-              margin-left: 8px;
-            }
+          }
+          a.reset_variations {
+            margin-left: 8px;
           }
         }
       }
     }
-
   }
 }

@@ -15,10 +15,14 @@ $headingFont: "Oswald-Bold";
 }
 .theme-wky-piranha-supplies {
   overflow-x: hidden;
-  
+
   &.woocommerce {
     .summary {
       table.variations {
+        tr {
+          display: block;
+          margin-bottom: 20px;
+        }
         td.label {
           display: block;
           background: none;
@@ -57,7 +61,7 @@ $headingFont: "Oswald-Bold";
         }
       }
       .single_variation_wrap {
-        margin-top: 40px;
+        margin-top: 20px;
       }
     }
   }

@@ -10,6 +10,11 @@ $headingFont: "Oswald-Bold";
   box-shadow: $value;
 }
 
+@mixin transition($value) {
+  -webkit-transition: $value;
+  transition: $value;
+}
+
 .theme-wky-piranha-supplies {
   &.woocommerce {
     .summary {
@@ -31,8 +36,11 @@ $headingFont: "Oswald-Bold";
           .variable-items-wrapper {
             .variable-item:not(.radio-variable-item).button-variable-item {
               @include box-shadow(none !important);
+              @include transition(all .2s);
               background: $gray;
               padding: 20px 10px;
+
+
 
               &.selected {
                 backgroud: $black;

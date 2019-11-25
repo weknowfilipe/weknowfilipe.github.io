@@ -32,9 +32,10 @@ $headingFont: "Oswald-Bold";
               background: $gray;
               padding: 20px 10px;
 
-              [data-wvstooltip]:after, [data-wvstooltip]:before{
-                display: none;
-              }
+            }
+
+            [data-wvstooltip]:after, [data-wvstooltip]:before {
+              display: none;
             }
           }
         }

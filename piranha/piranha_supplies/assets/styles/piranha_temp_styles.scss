@@ -2,7 +2,7 @@
 $headingFont: "Oswald-Bold";
 
 .theme-wky-piranha-supplies {
-  .woocommerce {
+  &.woocommerce {
     .summary {
       table.variations {
         td.label {

@@ -31,20 +31,17 @@ $headingFont: "Oswald-Bold";
           }
         }
         td.value {
-          display: block;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
 
           .variable-items-wrapper {
-            display: fex;
-            flex-wrap: wrap;
-            align-items: center;
 
             .variable-item:not(.radio-variable-item).button-variable-item {
               @include box-shadow(none !important);
               @include transition(all ease .2s);
               background: $gray;
               padding: 20px 10px;
-
-
 
               &.selected {
                 background: $black;
@@ -53,12 +50,12 @@ $headingFont: "Oswald-Bold";
 
             }
 
-            a.reset_variations {
-              margin-left: 8px;
-            }
-
             [data-wvstooltip]:after, [data-wvstooltip]:before {
               display: none;
+            }
+
+            a.reset_variations {
+              margin-left: 8px;
             }
           }
         }
